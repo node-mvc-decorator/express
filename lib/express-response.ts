@@ -1,7 +1,7 @@
 import * as express from 'express';
 import {HttpResponse} from "@node-mvc-decorator/core";
 
-export class ExpressResponse extends HttpResponse<express.Response> {
+class ExpressResponse extends HttpResponse<express.Response> {
     send(body: any): this {
         this.response.send(body);
         return this;
@@ -18,3 +18,5 @@ export class ExpressResponse extends HttpResponse<express.Response> {
     }
 
 }
+
+export {ExpressResponse};

@@ -3,7 +3,7 @@ import * as express from 'express';
 import {IncomingHttpHeaders} from "http";
 import {HttpRequest} from "@node-mvc-decorator/core";
 
-export class ExpressRequest extends HttpRequest<express.Request> {
+class ExpressRequest extends HttpRequest<express.Request> {
     get headers(): IncomingHttpHeaders {
         return this.request.headers;
     }
@@ -20,3 +20,5 @@ export class ExpressRequest extends HttpRequest<express.Request> {
     }
 
 }
+
+export {ExpressRequest};
