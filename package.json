@@ -1,0 +1,28 @@
+{
+  "name": "@node-mvc-decorator/express",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && ts-node ./lib/demo.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-mvc-decorator/express.git"
+  },
+  "author": "wangliang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/node-mvc-decorator/express/issues"
+  },
+  "homepage": "https://github.com/node-mvc-decorator/express#readme",
+  "dependencies": {
+    "@node-mvc-decorator/core": "0.0.14",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "ts-node": "~4.1.0"
+  }
+}
