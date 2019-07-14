@@ -1,10 +1,10 @@
 
 
-import {Constructor} from "@node-mvc-decorator/core/lib/beans/constructor";
 
 import {ExpressResponse} from "./express-response";
 import {ExpressRequest} from "./express-request";
 import * as express from 'express';
+import {Constructor} from "@node-mvc-decorator/core/lib/beans/constructor";
 import {resolveRouter} from "@node-mvc-decorator/core/lib/core";
 
 
