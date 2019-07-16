@@ -1,9 +1,9 @@
 
 import * as express from 'express';
 import {IncomingHttpHeaders} from "http";
-import {HttpRequest} from "@node-mvc-decorator/core";
+import {CoreRequest} from "@node-mvc-decorator/core";
 
-class ExpressRequest extends HttpRequest<express.Request> {
+class ExpressRequest extends CoreRequest<express.Request> {
     get headers(): IncomingHttpHeaders {
         return this.request.headers;
     }
