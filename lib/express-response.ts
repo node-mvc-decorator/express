@@ -17,6 +17,11 @@ class ExpressResponse extends CoreResponse<express.Response> {
         return this;
     }
 
+    end(): this {
+        this.response.end();
+        return this;
+    }
+
 }
 
 export {ExpressResponse};
